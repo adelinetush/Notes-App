@@ -31,4 +31,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
 
 db.init_app(app)
 
+from app import app
+
+
+
 
