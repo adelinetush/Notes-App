@@ -3,6 +3,10 @@ from app.models import db
 
 app = Flask(__name__)
 
+@app.route('/<path:path>')
+def static_file(path):
+    return app.send_static_file(path)
+
 POSTGRES = {
     'user': 'ujunsnkoqsoxle',
     'pw': 'dc931a20cb777d5baa5060c4061b608ae41f51564112e9616d5b845662cea0d7',

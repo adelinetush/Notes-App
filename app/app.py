@@ -11,6 +11,10 @@ entry = EntryController()
 uname = ""
 upassword = ""
 
+@app.route('/protected')
+def protected():
+    return '%s' % current_identity
+
 @app.route('/')
 @app.route("/index")
 def main():
