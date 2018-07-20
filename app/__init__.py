@@ -27,7 +27,7 @@ POSTGRESTEST = {
 app.config['DEBUG'] = True
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root@localhost:5432/diary'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
-%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRESTEST
+%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
 
 db.init_app(app)
 
