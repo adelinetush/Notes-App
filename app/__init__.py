@@ -1,11 +1,12 @@
 from flask import Flask
 from app.models import db
 
+
+
+
 app = Flask(__name__)
 
-@app.route('/<path:path>')
-def static_file(path):
-    return app.send_static_file(path)
+
 
 POSTGRES = {
     'user': 'ujunsnkoqsoxle',
@@ -29,4 +30,5 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
 %(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
 
 db.init_app(app)
+
 
