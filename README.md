@@ -4,7 +4,7 @@
 
 This application was built as part of the andela challenge. 
 
-##### Project Url:
+##### Project Url: To be added
 <!-- Put your project url here -->
 
 Technologies:
